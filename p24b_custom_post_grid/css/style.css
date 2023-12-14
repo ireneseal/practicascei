@@ -1,0 +1,56 @@
+*{padding: 0px; margin: 0; box-sizing: border-box;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;}
+
+h1{
+    padding: 20px 0;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+body{
+padding: 20px;
+/*display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;*/
+
+}
+
+.grid__container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    height: 100vh;
+    max-width: 800px;
+    margin: 20px auto;/*Solo si hay un ancho definido y elementos tipo bloque*/
+}
+
+.grid__image{
+    aspect-ratio: 3.5/4;
+}
+
+.grid__item{
+    border: 1px solid black; 
+    padding-bottom: 1rem;
+}
+
+img{
+    width: 100%;
+    display: block;
+    border-bottom: 1px solid black;
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+}
+
+h2{
+    font-size: 1rem;
+    margin-left: 0.8rem;
+    padding-top: 1rem;
+}
+
+p{
+    font-size: 0.8rem;
+    margin-left: 0.8rem;
+}

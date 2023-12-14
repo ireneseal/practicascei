@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GRID mosaico</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="photo_container"></div>
+
+    <div class="grid_container">
+        <div class="grid_item">1</div>
+        <div class="grid_item grid_item--2">2</div>
+        <div class="grid_item">3</div>
+        <div class="grid_item">4</div>
+        <div class="grid_item grid_item--5">5</div>
+        <div class="grid_item">6</div>
+        <div class="grid_item">7</div>
+        <div class="grid_item">8</div>
+        <div class="grid_item grid_item--9">9</div>
+        <div class="grid_item">10</div>
+        <div class="grid_item">11</div>
+        <div class="grid_item">12</div>
+        <div class="grid_item">13</div>
+        <div class="grid_item">14</div>
+        <div class="grid_item">15</div>
+        <div class="grid_item grid_item--16">16</div>
+        <div class="grid_item">17</div>
+        <div class="grid_item">18</div>
+        <div class="grid_item">19</div>
+        <div class="grid_item">20</div>
+        <div class="grid_item">21</div>
+        <div class="grid_item grid_item--right">22</div>
+        <div class="grid_item grid_item--bottom">23</div>
+        <div class="grid_item grid_item--end">24</div>
+    </div>
+
+    <script>
+        const flexItems = document.querySelectorAll('.grid_item');
+        flexItems.forEach((flexItem,index) => {
+            const color = 'hsl('+ Math.floor(280 -(index*(280/flexItems.length)))+', 100%, 50%)';
+            flexItem.style.background = color;
+        });   
+    </script>
+
+</body>
+
+</html>
