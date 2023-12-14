@@ -1,0 +1,62 @@
+*{padding: 0; margin: 0; box-sizing: border-box;}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    perspective: 1800px;
+    perspective-origin: 50% -50%;
+}
+
+.rubik_cube{
+    perspective: 900px;
+    height: 200px;
+    width: 200px;
+    transform-style: preserve-3d;
+}
+
+.blue{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    transform: skewY(-20deg)  translate(92px, 200px) rotateY(20deg);
+}
+
+.blue__item{
+    border-radius: 5px;
+    background-color: blue;
+    border: 3px solid black;
+    aspect-ratio: 1/1;
+}
+
+.red{
+    transform: skewY(20deg) translate(-92px) rotateY(-20deg);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.red__item{
+    border-radius: 5px;
+    background-color: rgb(255, 0, 0);
+    border: 3px solid black;
+    aspect-ratio: 1/1; 
+}
+
+.green{
+    transform: rotateZ(3deg) rotateY(136deg) rotateX(93deg) translate3d(118px, 109px,318px) scale(1.55);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.green__item{
+    border-radius: 5px;
+    background-color: rgb(9, 255, 0);
+    border: 3px solid black;
+    aspect-ratio: 1/1;
+}
+
+.blue__item:hover, .green__item:hover, .red__item:hover{
+    border: solid aquamarine 4px;
+    box-shadow: inset 5px 5px 10px 4px aquamarine;
+
+}
