@@ -1,0 +1,99 @@
+
+        * {padding: 0; margin:0; box-sizing: border-box;}
+
+        
+        .game {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgb(1,0,15);
+            background: linear-gradient(16deg, rgba(1,0,15,1) 0%, rgba(9,9,121,1) 35%, rgba(8,30,255,1) 100%);
+        }
+
+        .game__container {
+            display: grid;
+            grid-template-columns: 2fr 1fr 2fr;
+            height: 400px;
+            width: 100%;
+            gap: 20px;
+            max-width: 840px;
+            margin: 0 auto;
+        }
+
+        .game__fighter {
+            border-radius: 4px;
+            overflow: hidden;
+            border: 8px solid #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #2a2a2a;
+        }
+
+        .game__fighter-in {
+            height: 400px;
+            width:100%;
+            display: contents;
+        }
+
+        .game__fighter-in img{
+            height:100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .button button {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            padding: 10px 20px;
+            font-size: 24px;
+            border: 4px solid #000;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .winner{
+            border: 8px solid red;
+            animation: shake 0.2s ease-in;
+        }
+
+        .winner:before{
+            content: "WINNER";
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 2rem;
+            color: red;
+            position: absolute;
+        }
+
+        .draw{
+            border: 8px solid rgb(242, 255, 0);
+            animation: shake 0.2s ease-in;
+        }
+
+        .draw:before{
+            content: "DRAW";
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 2rem;
+            color: rgb(242, 255, 0);
+            position: absolute;
+        }
+
+        .blackandwhite{
+            -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+            filter: grayscale(100%);
+        }
+
+        @keyframes shake {
+            0% {transform: rotate(0deg)}
+            25% {transform: rotate(5deg)}
+            50% {transform: rotate(0eg)}
+            75% {transform: rotate(-5deg)}
+            100% {transform: rotate(0deg)}
+          }
+       

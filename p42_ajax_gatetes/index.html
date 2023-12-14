@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="grid-gatetes"></div>
+
+    <style>
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .grid-gatetes{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 5px;
+
+        }
+
+    </style>
+
+
+
+<script defer>
+    const gateteContainer = document.querySelector('.grid-gatetes');
+
+
+    function createGatetes (gatetesObj){
+
+        gatetesObj.forEach(gateteItem => {
+
+        const gatete = document.createElement('img');
+        gatete.src = gateteItem.url;
+        gateteContainer.appendChild(gatete);
+
+
+        });
+
+
+        /*const gridContainer = document.createElement('div');
+        gridContainer.classList.add('container');
+        mainContainer.appendChild(gridContainer);*/
+
+
+
+    };
+
+
+fetch('https://api.thecatapi.com/v1/images/search?api_key=live_P3Fz4M6ixYYqnq3xWt89bhZ8oPxxYi08V5mBOsdMuiaNPpc4Ur0rIFRd2AEPwBWt&limit=9')
+        .then( response => response.json())
+        .then (data => createGatetes(data))
+</script>
+    
+</body>
+</html>

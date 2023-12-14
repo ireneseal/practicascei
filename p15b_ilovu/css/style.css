@@ -1,0 +1,140 @@
+*{ padding: 0; margin: 0; border: none; box-sizing: border-box; }
+
+@font-face {
+    font-family: raven;
+    src: url(../fonts/Super_Raven_Personal_Use.ttf);
+  }
+
+img{
+    width: 100%;
+}
+ 
+.container{
+
+    max-width: 600px;
+    height: 800px;
+    background: linear-gradient(90deg, rgba(255,34,128,1) 0%,rgba(255,34,128,1) 25%, rgba(255,112,167,1) 25%, rgba(255,112,167,1) 50%, rgba(255,210,41,1) 50%, rgba(255,210,41,1) 75%, rgba(255,235,0,1) 75%, rgba(255,235,0,1) 100%);
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+ }
+
+.header{
+    background-color: rgb(253, 241, 247);
+    border: 4px solid white;
+    display: flex;
+    gap: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.header__title{
+    flex-basis: 50%;
+    font-family: 'DM Serif Display', serif;
+    font-size: 3rem;
+}
+
+.header__title-orange{
+    font-family: raven;
+    color: #ff8000;
+    font-size: 3rem;
+}
+
+.header__title-pink{
+    font-family: raven;
+    color: #ff4080;
+    display: flex;
+    font-size: 2rem;
+
+}
+
+.header__heart-icon{
+    height: 22px;
+    width: 22px;
+    margin: 0 8px;
+}
+
+.header__paragraph{
+    flex-basis: 50%;
+    font-size: 1.2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #ff4080 ;
+    font-size: 1.4rem;
+}
+
+.block1, .block2, .block3, .block4, .block5{
+    background-color: white;
+    height: 120px;
+    border: 4px dashed rgb(252, 163, 19);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border-bottom: none;
+}
+
+.block5{
+    border: 4px dashed rgb(252, 163, 19);
+}
+
+.block__paragraph{
+    font-size: 0.7rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+}
+
+.block__paragraph-orange{
+    color: rgb(255, 136, 0);
+}
+.block__paragraph-pink{
+    color:#ff4080;
+}
+
+.hearts1{
+    position: absolute;
+    top: 230px;
+    left: 100px;
+    width: 60px;
+    height: 60px;
+    transform: rotate(20deg);
+}
+
+.hearts2{
+    position: absolute;
+    top: 350px;
+    left: 400px;
+    width: 70px;
+    height: 70px;
+    transform: rotate(-10deg);
+}
+
+.hearts3{
+    position: absolute;
+    top: 590px;
+    left: 260px;
+    width: 50px;
+    height: 50px;
+    transform: rotate(15deg);
+}
+
+.footer{
+    font-size: 0.7rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    text-align: right;
+    color: #ff4080;
+    background-color: rgb(253, 241, 247);
+    border: 4px solid white;
+    padding: 4px 15px 4px 4px;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 100px;
+}
+
+
+

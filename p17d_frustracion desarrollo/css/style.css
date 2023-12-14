@@ -1,0 +1,81 @@
+*{ padding: 0; margin: 0; border: none; box-sizing: border-box; }
+
+body{
+    background-color: rgb(138, 206, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header{
+    padding: 10px;
+}
+
+h1{
+    background-color: white; color: rgb(36, 36, 36);
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px 1px rgba(0, 140, 255, 0.638);
+}
+
+
+section{
+    display: flex;
+    border-radius: 8px;
+}
+
+.emociones__list{
+    flex-basis: 20%;
+    border-radius: 8px;
+    margin: 0 10px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 2px 2px 5px 1px rgba(0, 140, 255, 0.638);
+}
+
+ul{
+    list-style: none;
+    text-align: center;  
+}
+
+img{
+    width: 80%;
+}
+
+section button{
+    text-transform: uppercase;
+    padding: 7px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    background-color: white;
+    border-bottom: 1px solid #008cff;
+    width: 100%;
+    position: relative;
+    top: 1px;
+}
+
+.emociones__mensaje{
+    flex-basis: 80%;
+    width: 100%;
+    padding-right: 10px; 
+}
+    
+.emociones__mensaje p{
+    padding: 40px;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 2px 2px 5px 1px #008cffa3;
+}
+
+.random-button{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 8px;
+    right: 15px;
+    bottom: 15px;
+    box-shadow: 2px 2px 5px 1px rgba(0, 140, 255, 0.638);
+}
+

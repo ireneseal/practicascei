@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frustracion desarrollador</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>Dev Emotions tool</h1>
+    </header>
+
+    <section class="emociones">
+        <aside class="emociones__list">
+            <ul>
+                <li class=" emociones emocion__iluminacion">
+                    <button value="iluminacion">Iluminacion</button>
+                </li>
+                <li class="emociones emocion__paz">
+                    <button value="paz">Paz</button>
+                <li>
+                <li class="emociones emocion__alegria">
+                    <button value="alegria">Alegria</button>
+                </li>
+                <li class="emociones emocion__amor">
+                    <button value="amor">Amor</button>
+                </li>
+                <li class="emociones emocion__razonamiento">
+                    <button value="razonamiento">Razonamiento</button>
+                </li>
+                <li class="emociones emocion__aceptacion">
+                    <button value="aceptacion">Aceptacion</button>
+                </li>
+                <li class="emociones emocion__voluntad">
+                    <button value="voluntad">Voluntad</button>
+                </li>
+                <li class="emociones emocion__neutralidad">
+                    <button value="neutralidad">Neutralidad</button>
+                </li>
+                <li class="emociones emocion__coraje">
+                    <button value="coraje">Coraje</button>
+                </li>
+                <li class="emociones emocion__orgullo">
+                    <button value="orgullo">Orgullo</button>
+                </li>
+                <li class="emociones emocion__ira">
+                    <button value="ira">Ira</button>
+                </li>
+                <li class="emociones emocion__deseo">
+                    <button value="deseo">Deseo</button>
+                </li>
+                <li class="emociones emocion__miedo">
+                    <button value="miedo">Miedo</button>
+                </li>
+                <li class="emociones emocion__tristeza">
+                    <button value="tristeza">Tristeza</button>
+                </li>
+                <li class="emociones emocion__apatia">
+                    <button value="apatia">Apatía</button>
+                </li>
+                <li class="emociones emocion__culpa">
+                    <button value="culpa">Culpa</button>
+                </li>
+                <li class="emociones emocion__verguenza">
+                    <button value="verguenza">Verguenza</button>
+                </li>
+            </ul>
+        </aside>
+
+        <main class="emociones__mensaje">
+            <div class="mensaje mensaje__iluminación">
+                <p>En mi barrio me llaman la Dalai Lama de Javascript</p>
+            </div>
+
+            <div class="mensaje mensaje__paz">
+                <p style="display: none;">He terminado el proyecto</p>
+            </div>
+
+            <div class="mensaje mensaje__alegria">
+                <p style="display: none;">Ohhhh siii, es viernes!!!!!</p>
+            </div>
+            <div class="mensaje mensaje__amor">
+                <p style="display: none;">Me quiero tanto que en San Valentín reservo cena para 2 y voy sol@</p>
+            </div>
+            <div class="mensaje mensaje__razonamiento">
+                <p style="display: none;">Math.floor(x+34-y/array.lenght)... JAJA! FUUTT FUUUU! (cerebro chamuscado)</p>
+            </div>
+            <div class="mensaje mensaje__aceptacion">
+                <p style="display: none;">Hoy me ha vencido del código, mañana será otro día</p>
+            </div>
+            <div class="mensaje mensaje__voluntad">
+                <p style="display: none;">Si digo que acabo hoy el programa, lo acabo hoy</p>
+            </div>
+            <div class="mensaje mensaje__neutralidad">
+                <p style="display: none;">Soy programadore y los programadores no tienen emociones</p>
+            </div>
+            <div class="mensaje mensaje__coraje">
+                <p style="display: none;">No me sale ni una práctica pero VAMOS VAMOS!!, que rule JS!!!</p>
+            </div>
+            <div class="mensaje mensaje__orgullo">
+                <p style="display: none;">Mira que PEASO de web he hecho</p>
+            </div>
+            <div class="mensaje mensaje__ira">
+                <p style="display: none;">GRFTXFGRR!!! No me funciona!!!!</p>
+            </div>
+            <div class="mensaje mensaje__deseo">
+                <p style="display: none;">Amo css with all my soul</p>
+            </div>
+            <div class="mensaje mensaje__miedo">
+                <p style="display: none;">Uuuuuuuuuuhhh!! Que viene Javascript!!</p>
+            </div>
+            <div class="mensaje mensaje__tristeza">
+                <p style="display: none;">No valgo para programar</p>
+            </div>
+            <div class="mensaje mensaje__apatia">
+                <p style="display: none;">Paso de programar hoy, es más, paso de pasar de programar...</p>
+            </div>
+            <div class="mensaje mensaje__culpa">
+                <p style="display: none;">Tenía que haber hecho el código más limpio pero me pudo la pereza :/</p>
+            </div>
+            <div class="mensaje mensaje__verguenza">
+                <p style="display: none;">Me da verguenzilla preguntar dudas</p>
+            </div>
+        </main>
+
+    </section>
+
+    <button class="random-button">
+        <img src="img/2989898.png" alt="random button">
+    </button>
+    
+<script>
+    const emocionesBtn = document.querySelectorAll('.emociones__list button');
+
+    console.log(emocionesBtn);
+
+    //Recorrer la lista en bucle y asignar un color a cada texto
+    emocionesBtn.forEach((boton, index) =>{
+        console.log(index);
+        console.log(boton);
+        const colorMutation = Math.floor(280 -(index*(280/emocionesBtn.length)));
+        const color = "hsl("+colorMutation+", 100%, 50%)";
+        boton.style.color = color;
+
+        boton.addEventListener('click', cargarMensaje);
+    });
+
+    function cargarMensaje(){
+        
+
+        console.log('holi');
+    }
+
+    
+    const randomBtn = document.querySelector('.random-button');
+    console.log()
+
+    //El console log de boton e index es solo para que nos devuelva esos datos, pero no es necesario para que funcione la funcion. La constante de colorMutation se podría evitar si lo definimos directamente en el hsl ("hsl("+ Math.floor(280 -(index*(280/emocionesBtn.length)))+", 100%, 50%)")
+
+</script>
+
+</body>
+</html>
