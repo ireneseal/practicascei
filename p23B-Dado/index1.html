@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="principal">
+
+<div class="principal__row1">
+<!--DADO 1-->
+
+    <div class="dado-one">
+        <div class="dado-one__one"></div>
+    </div>
+
+<!--DADO 2-->
+
+<div class="dado-two">
+    <div class="dado-two__one"></div>
+    <div class="dado-two__two"></div>
+</div>
+
+<!--DADO 3-->
+
+<div class="dado-three">
+    <div class="dado-three__one"></div>
+    <div class="dado-three__two"></div>
+    <div class="dado-three__three"></div>
+</div>
+
+</div>
+
+<div class="principal__row2">
+
+<!--DADO 4-->
+
+<div class="dado-four">
+    <div class="dado-four-row1">
+        <div class="dado-four__one"></div>
+        <div class="dado-four__two"></div>
+    </div>
+    <div class="dado-four-row2">
+        <div class="dado-four__three"></div>
+        <div class="dado-four__four"></div>
+    </div>
+</div>
+
+<!--DADO 5-->
+
+<div class="dado-four">
+    <div class="dado-four-row1">
+        <div class="dado-four__one"></div>
+        <div class="dado-four__two"></div>
+    </div>
+
+    <div class="dado-four__five"></div>
+
+    <div class="dado-four-row2">
+        <div class="dado-four__three"></div>
+        <div class="dado-four__four"></div>
+    </div>
+    
+</div>
+
+<!--DADO 6-->
+
+<div class="dado-six">
+    <div class="dado-six-row1">
+        <div class="dado-six__one"></div>
+        <div class="dado-six__two"></div>
+    </div>
+
+    <div class="dado-six-row2">
+        <div class="dado-six__three"></div>
+        <div class="dado-six__four"></div>
+    </div>
+
+    <div class="dado-six-row3">
+        <div class="dado-six__five"></div>
+        <div class="dado-six__six"></div>
+    </div>
+    
+</div>
+
+</div>
+</div>
+
+<button class="random">RANDOM</button>
+
+<script>
+    
+        //Captura de elementos
+        const RandomBtn = document.querySelector('.random');
+
+        
+        const dice = document.querySelectorAll('.no-me-fio__item');
+
+        //Genera eventos sobre la variable capturada
+
+        RandomBtn.addEventListener('click', showrandomdice)
+
+        //Declara funcion
+        function showrandomdice(){
+            subItems.forEach(item => {
+                item.classList.toggle('play')
+            })
+        }
+
+    
+
+</script>
+
+</body>
+</html>
