@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imágenes cambiantes</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/fun.js" defer></script> <!--Se utiliza defer para que java primero entienda el html. Esto puede evitar muchos errores-->
+
+</head>
+<body>
+
+    <h2> La web de Pescanova</h2>
+
+   
+
+<!--Foto 1 (usando figure porque es una imagen con pie de foto) / es lo mismo que usar un div pero más especifico-->
+    <figure>
+
+            <img src="img_voldemort/1.webp" alt="Foto de varitas Voldemort" title="Foto de varitas Voldemort" loading="lazy" id="voldemort" class="image_1">
+
+        <figcaption>El poder está en la varita</figcaption >
+
+    </figure>
+<!--Foto 1-->
+
+
+<div class="btn_flechas">
+
+    <img id="btn_flechas" class="btn_flechas" src="img_voldemort\flechas.svg" alt="Icono flechas" title="Icono flechas" >
+
+    <!-- El id en java script se referencia son un #, mientras que la class siempre es con el .btn_flechas. No haría falta tener id y class, pero si tenemos está bien llamarlas igual-->
+    
+</button>
+
+</body>
+</html>
+
+<!-- <img src="img/voldemort_de_merluza.webp" alt="Foto de varitas Voldemort" title="Foto de varitas Voldemort" loading="lazy" id="image" class="image_2">
+
+            <img src="img/voldemort-triste.jpg" alt="Foto de varitas Voldemort" title="Foto de varitas Voldemort" loading="lazy" id="image" class="image_3">
+        -->
+
+        <!-- funtion change image se define donde sea en el jss
+        Hay que definir lo que aparece en html en jss por eso se usan las const - si vamos a hacer referencia a algo como el boton en jss hay que decirselo en el mismo archivo jss. Para definirlo le ponemos alguna clase / id
+        -->
