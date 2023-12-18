@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psychogenius</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <div class="grid">
+        <div class="grid_item"></div>
+        <div class="grid_item"></div>
+        <div class="grid_item"></div>
+        <div class="grid_item"></div>
+        <div class="color">
+            <div class="letter">G</div>
+            <div class="grid_item color grid_item--img"></div>
+        </div>
+        <div class="grid_item"></div>
+        <div class="grid_item"></div>
+        <div class="grid_item"></div>
+        <div class="grid_item"></div>
+        <div class="grid_item"></div>
+        <div class="grid_item"></div>
+        <div class="grid_item"></div>
+        <div class="grid_item"></div>
+        <div class="color">
+            <div class="letter">E</div>
+            <div class="grid_item grid_item--img"></div>
+        </div>
+        <div class="grid_item"></div>
+        <div class="grid_item"></div>
+        <div class="grid_item"></div>
+        <div class="grid_item"></div>
+        <div class="grid_item"></div>
+        <div class="grid_item"></div>
+        <div class="grid_item"></div>
+        <div class="grid_item"></div>
+        <div class="color">
+            <div class="letter">N</div>
+            <div class="grid_item grid_item--img"></div>
+        </div>
+        <div class="grid_item"></div>
+        <div class="grid_item"></div>
+        <div class="grid_item"></div>
+        <div class="grid_item"></div>
+        <div class="grid_item"></div>
+        <div class="grid_item"></div>
+        <div class="grid_item"></div>
+        <div class="grid_item"></div>
+        <div class="color">
+            <div class="letter">I</div>
+            <div class="grid_item grid_item--img"></div>
+        </div>
+        <div class="grid_item"></div>
+        <div class="grid_item"></div>
+        <div class="grid_item"></div>
+        <div class="grid_item"></div>
+        <div class="grid_item"></div>
+        <div class="grid_item"></div>
+        <div class="grid_item"></div>
+        <div class="grid_item"></div>
+        <div class="color">
+            <div class="letter">U</div>
+            <div class="grid_item grid_item--img"></div>
+        </div>
+        <div class="grid_item"></div>
+        <div class="grid_item"></div>
+        <div class="grid_item"></div>
+        <div class="grid_item"></div>
+        <div class="grid_item"></div>
+        <div class="grid_item"></div>
+        <div class="grid_item"></div>
+        <div class="grid_item"></div>
+        <div class="color">
+            <div class="letter">S</div>
+            <div class="grid_item grid_item--img"></div>
+        </div>
+        <div class="grid_item"></div>
+        <div class="grid_item"></div>
+        <div class="grid_item"></div>
+        <div class="grid_item"></div>
+
+    </div>
+    
+    <script>
+        const flexItems = document.querySelectorAll('.grid_item');
+        flexItems.forEach((flexItem,index) => {
+            const color = 'hsl('+ Math.floor(280 -(index*(280/flexItems.length)))+', 100%, 50%)';
+            flexItem.style.background = color;
+        });   
+    </script>
+
+</body>
+</html>

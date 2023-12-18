@@ -1,0 +1,43 @@
+*{padding: 0; margin: 0; box-sizing: border-box;}
+
+body{
+    background-color: black;
+}
+
+.grid{
+ display: grid;
+ grid-template-columns: 1fr 2fr 3fr 4fr 5fr 4fr 3fr 2fr 1fr;
+}
+
+.grid_item{
+    aspect-ratio: 1/1;
+    border-radius: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    
+}
+
+.grid_item--img{
+    mix-blend-mode: color;
+    
+}
+
+.color{
+    background-image: url('../img/mcenroe.jpg');
+    background-size: cover;
+    background-position: center;
+    aspect-ratio: 1/1;
+    border-radius: 200px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.letter{
+    position: absolute;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 10vw;
+    margin-top: 3.5vw;
+}
